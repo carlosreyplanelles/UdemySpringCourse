@@ -7,4 +7,10 @@ public class BasketBallCoach implements Coach {
 		return "Improve your aim on 3 points shots";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -5,17 +5,20 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class HelloSpringApp {
 
 	public static void main(String[] args) {
-		
-		//Load spring configuration file
+
+		// Load spring configuration file
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		
-		//Retrieve bean from Spring container
+
+		// Retrieve bean from Spring container
 		Coach theCoach = context.getBean("myCoach", Coach.class);
-		
-		//call methods on the bean
+
+		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		
-		//close the context
+		// call new methods from dependency fortuneService
+		System.out.println(theCoach.getDailyFortune());
+
+		// close the context
 		context.close();
 
 	}
