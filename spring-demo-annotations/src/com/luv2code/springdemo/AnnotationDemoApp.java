@@ -10,7 +10,11 @@ public class AnnotationDemoApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// get the bean from spring container
-		Coach tennisCoach = context.getBean("tennisCoach", Coach.class);
+		/**
+		 * If I create an instance of coach instead of TennisCoach i can't access to the public methods implemented in TennisCoach class.
+		 * Coach tennisCoach = context.getBean("tennisCoach", Coach.class)
+		 */
+		TennisCoach tennisCoach = context.getBean("tennisCoach", TennisCoach.class);
 		
 		Coach baseballCoach = context.getBean("baseballCoach", Coach.class);
 		
@@ -20,6 +24,7 @@ public class AnnotationDemoApp {
 		
 		//call method get the daily fortune
 		System.out.println("TennisCoach daily fortune: " + tennisCoach.getDailyFortune());
+		System.out.println("TennisCoach team: "+tennisCoach.getTeam());
 		
 		// close the context
 		context.close();

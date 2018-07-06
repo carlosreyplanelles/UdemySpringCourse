@@ -2,17 +2,22 @@ package com.luv2code.springdemo;
 
 import java.util.Random;
 
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class RandomFortuneService implements FortuneService {
 	
+	@PostConstruct
+	public void doConstructStuff() {
+		System.out.println(">>Inside doConstructStuff()");
+	}
+	
 	// create an array of strings
-	private String[] data = {
-			"Beware",
-			"Diligence",
-			"Reward"
-	};
+	@Value("${fortune.fortunes}")
+	  private String[] data;
 	
 	// create a random number generator
 	private Random myRandom = new Random();
