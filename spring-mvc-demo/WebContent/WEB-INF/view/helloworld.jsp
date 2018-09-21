@@ -8,7 +8,9 @@
 			<h1>Hello World of Spring</h1>
 		</section>
 		<section>
-			<p>Student name: ${param.studentName}</p>
+			<div>Student name: ${param.studentName}</div>
+			<div>The message: ${name}</div>
+			
 		</section>
 	</article>
 </body>

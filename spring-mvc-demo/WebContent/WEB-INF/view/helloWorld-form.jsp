@@ -4,9 +4,8 @@
 <title>Index-Form</title>
 </head>
 <body>
- 	<form action="showHello" method="GET">
+ 	<form action="helloShout2" method="GET">
 		<input type="text" name="studentName" placeholder="What's your name?">
-
 		<input type="submit">
 	</form> 
 </body>
