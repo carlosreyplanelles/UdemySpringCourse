@@ -1,4 +1,4 @@
-package com.luv2code.springdemo;
+package src.com.luv2code.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

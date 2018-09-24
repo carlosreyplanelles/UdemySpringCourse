@@ -28,6 +28,10 @@
 	</bean>
 	<!-- Access to resources directory -->
 	<mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
+		
+	 <util:properties id="countryOptions" location="classpath:../countries.properties" /> 
+
 	
-	<util:properties id="countryOptions" location="classpath:../countries.properties" />
+
+	
 </beans>
