@@ -15,7 +15,7 @@ public class Customer {
 		this.firstName = firstName;
 	}
 	@NotNull(message="is required")
-	@Size(min=1)
+	@Size(min=1, message="is required")
 	public String getLastName() {
 		return lastName;
 	}

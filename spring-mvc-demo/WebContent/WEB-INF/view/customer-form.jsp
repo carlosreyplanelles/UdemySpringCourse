@@ -16,7 +16,7 @@
 					<form:input path="firstName"/>
 				</div>
 				<div>
-					<label>Last Name: </label>
+					<label>Last Name(*): </label>
 					<form:input path="lastName"/>
 					<form:errors path="lastName" cssClass="error"/>
 				</div>

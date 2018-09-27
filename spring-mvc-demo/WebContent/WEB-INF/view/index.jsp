@@ -5,6 +5,7 @@
 	<section>
 		<p><a href="showForm">Hello Form</a></p>
 		<p><a href="student/showForm">Student registration Form</a></p>
+		<p><a href="customer/showForm">Customer registration Form</a></p>
 	</section>
 	
 </body>

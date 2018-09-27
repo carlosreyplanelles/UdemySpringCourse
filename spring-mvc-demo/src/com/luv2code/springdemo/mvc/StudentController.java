@@ -3,8 +3,11 @@ package com.luv2code.springdemo.mvc;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -25,7 +28,7 @@ public class StudentController {
 		//Add student to the model
 		model.addAttribute("student", student);
 		model.addAttribute("theCountryOptions", countryOptions); 
-		return "register-student-form";
+		return "student-form";
 	}
 	
 	@RequestMapping("/processForm")
@@ -33,5 +36,8 @@ public class StudentController {
 		System.out.println("newStudent.getFirstName: "+ newStudent.getFirstName());
 		return "student-confirmation";
 	}
+	
+	
+	
 	
 }
