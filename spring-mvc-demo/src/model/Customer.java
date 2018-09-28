@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Customer {
 	
 	private String firstName;
@@ -16,7 +18,8 @@ public class Customer {
 	
 	@Min(value=0, message="Value should be greater than 0")
 	@Max(value=10, message="Value should be lower than 10")
-	private int freePasses;
+	@NotNull(message="is required")
+	private Integer freePasses;
 	
 	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="Only 5 chars/digits")
 	private String postalCode;
@@ -34,10 +37,10 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public int getFreePasses() {
+	public Integer getFreePasses() {
 		return freePasses;
 	}
-	public void setFreePasses(int freePasses) {
+	public void setFreePasses(Integer freePasses) {
 		this.freePasses = freePasses;
 	}
 	public String getPostalCode() {
