@@ -20,6 +20,11 @@
 					<form:input path="lastName"/>
 					<form:errors path="lastName" cssClass="error"/>
 				</div>
+				<div>
+					<label>FreePasses: </label>
+					<form:input path="freePasses"/>
+					<form:errors path="freePasses" cssClass="error"/>
+				</div> 
 				<input type="submit" value="Submit"/>
 			</fieldset>
 		</form:form>
