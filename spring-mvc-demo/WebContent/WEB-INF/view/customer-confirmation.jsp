@@ -9,5 +9,6 @@
 	
 	<p>Customer ${customer.firstName} ${customer.lastName} confirmed.<p>
  	<p>Free Passes: ${customer.freePasses}<p>
+ 	<p>Postal Code: ${customer.postalCode}<p>
  </body>
 </html>

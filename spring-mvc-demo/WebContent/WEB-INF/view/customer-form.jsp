@@ -25,6 +25,12 @@
 					<form:input path="freePasses"/>
 					<form:errors path="freePasses" cssClass="error"/>
 				</div> 
+				
+				<div>
+					<label>Postal Code: </label>
+					<form:input path="postalCode"/>
+					<form:errors path="postalCode" cssClass="error"/>
+				</div> 
 				<input type="submit" value="Submit"/>
 			</fieldset>
 		</form:form>
