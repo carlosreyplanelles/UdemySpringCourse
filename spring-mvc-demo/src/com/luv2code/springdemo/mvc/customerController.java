@@ -1,5 +1,6 @@
 package com.luv2code.springdemo.mvc;
 
+import javax.validation.Payload;
 import javax.validation.Valid;
 
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.luv2code.springdemo.mvc.validation.CourseCode;
 
 import model.Customer;
 
@@ -31,9 +34,10 @@ public class customerController {
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@Valid @ModelAttribute("customer") Customer customer, BindingResult result) {
+	public String processForm(@Valid @ModelAttribute("customer") Customer customer, BindingResult bindingResult) {
 		
-		if(result.hasErrors()) {
+		System.out.println(bindingResult);
+		if(bindingResult.hasErrors()) {
 			return "customer-form";
 		}
 		else {
