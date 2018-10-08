@@ -7,15 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.jboss.logging.Field;
-
 @Entity
-@Table(name="student")
-public class Student {
+@Table
+public class Employee {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Id
 	private int id;
 	
 	@Column(name="first_name")
@@ -24,9 +22,25 @@ public class Student {
 	@Column(name="last_name")
 	private String lastName;
 	
-	@Column(name="email")
-	private String email;
+	@Column(name="company")
+	private String company;
 	
+	public Employee() {}
+	
+	public Employee(String firstName, String lastName, String company) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.company = company;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -43,31 +57,16 @@ public class Student {
 		this.lastName = lastName;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getCompany() {
+		return company;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public int getId() {
-		return id;
+	public void setCompany(String company) {
+		this.company = company;
 	}
 	
-	public Student() {
-		
-	}
-
-	public Student(String firstName, String lastName, String email) {
-		this.firstName=firstName;
-		this.lastName=lastName;
-		this.email=email;
-	}
-	
-	@Override
 	public String toString() {
-		return "Student [id: "+ id + ", firstName: "+ firstName + ", lastName: "+ lastName + ", email: " + email + " ]";
+		return "Employee: { firstName: " + firstName + ", lastName: " + lastName + "company: " + company+ " }";
 	}
-	
+
 }

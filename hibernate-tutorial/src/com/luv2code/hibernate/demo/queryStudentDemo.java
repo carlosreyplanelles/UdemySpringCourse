@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 
 import model.Student;
 
-public class createStudentDemo {
+public class queryStudentDemo {
 
 	public static void main(String[] args) {
 		
@@ -23,30 +23,11 @@ public class createStudentDemo {
 
 		Session session = sessionFactory.getCurrentSession();
 		
-		try {
-			System.out.println("Creating new test student...");
-			Student newStudent = new Student(args[0], args[1], args[2]);
-			
-			session.beginTransaction();
-			System.out.println("Saving new student...");
-			session.save(newStudent);
-			
-			System.out.println("New student info:");
-			
-			System.out.println("newStudent id: " + newStudent.getId());
-			
-			 newStudent= session.get(Student.class, newStudent.getId());
-			
-			System.out.println("Modifying student info...");
-			
-			newStudent.setEmail("prueba2@gmail.com");
-			
-			session.save(newStudent);
-			System.out.println("Deleting first test student...");
-			
-			session.delete(newStudent);
+		try {		
+			List<Student> students = session.createQuery("from Student").list();
+			displayStudents(students);
+	
 			session.getTransaction().commit();
-			
 			System.out.println("Done");
 			
 			
@@ -59,6 +40,12 @@ public class createStudentDemo {
 			
 			
 
+	}
+
+	private static void displayStudents(List<Student> students) {
+		for(Student student: students) {
+			System.out.println(student);
+		}
 	}
 
 }
