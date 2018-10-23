@@ -11,9 +11,9 @@ import javax.persistence.Table;
 @Table
 public class Employee {
 	
-	@Column(name="id")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
 	private int id;
 	
 	@Column(name="first_name")
@@ -66,7 +66,7 @@ public class Employee {
 	}
 	
 	public String toString() {
-		return "Employee: { firstName: " + firstName + ", lastName: " + lastName + "company: " + company+ " }";
+		return "Employee: { firstName: " + firstName + ", lastName: " + lastName + " company: " + company+ " }";
 	}
 
 }
