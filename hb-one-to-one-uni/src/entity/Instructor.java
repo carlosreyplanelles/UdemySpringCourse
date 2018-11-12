@@ -20,32 +20,32 @@ public class Instructor {
 	private int id;
 	
 	@Column
-	private String firstName;
+	private String first_name;
 	
 	@Column
-	private String lastName;
+	private String last_name;
 	
 	@Column
 	private String email;
 
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="instructor_detail_id")
-	private int instructorDetailId;
+	private InstructorDetail instructorDetail;
 
 	public String getFirstName() {
-		return firstName;
+		return first_name;
 	}
 
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		this.first_name = firstName;
 	}
 
 	public String getLastName() {
-		return lastName;
+		return last_name;
 	}
 
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.last_name = lastName;
 	}
 
 	public String getEmail() {
@@ -56,12 +56,12 @@ public class Instructor {
 		this.email = email;
 	}
 
-	public int getInstructorDetailId() {
-		return instructorDetailId;
+	public InstructorDetail getInstructorDetailId() {
+		return instructorDetail;
 	}
 
-	public void setInstructorDetailId(int instructorDetailId) {
-		this.instructorDetailId = instructorDetailId;
+	public void setInstructorDetail(InstructorDetail instructorDetail) {
+		this.instructorDetail = instructorDetail;
 	}
 	
 	public Instructor() {
@@ -69,14 +69,15 @@ public class Instructor {
 	}
 
 	public Instructor(String firstName, String lastName, String email) {
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.first_name = firstName;
+		this.last_name = lastName;
 		this.email = email;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Instructor [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-				+ ", instructorDetailId=" + instructorDetailId + "]";
+		return "Instructor [id=" + id + ", firstName=" + first_name + ", lastName=" + last_name + ", email=" + email
+				+ ", instructorDetail=" + instructorDetail + "]";
 	}
+	
 }
