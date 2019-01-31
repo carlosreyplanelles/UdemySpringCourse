@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0385f04d-49d4-4c92-8772-4944e880daa0" name="Default Changelist" comment="" />
+    <list default="true" id="0385f04d-49d4-4c92-8772-4944e880daa0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/libraries/Hibernate_5_3_7_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/libraries/Spring_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/hibernate-one-to-many.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/byte-buddy-1.8.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/classmate-1.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/dom4j-2.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/hibernate-commons-annotations-5.0.4.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/hibernate-core-5.3.7.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/jandex-2.0.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/javassist-3.23.1-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/javax.persistence-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-aop-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-aspects-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-context-support-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-instrument-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-instrument-tomcat-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-jdbc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-jms-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-messaging-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-orm-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-oxm-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-test-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/lib/spring-tx-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/META-INF/hibernate-one-to-many.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/demo/bidirectional/DeleteInstructorDetailsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/demo/bidirectional/GetInstructorDetailsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/demo/unidirectional/CreateCoursesDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/demo/unidirectional/CreateDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/demo/unidirectional/CreateInstructorDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/demo/unidirectional/DeleteDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/demo/unidirectional/GetInstructorCoursesDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/entity/Course.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/entity/Instructor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-many/hibernate/entity/InstructorDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/META-INF/hibernate-one-to-one.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/hibernate/demo/bidirectional/DeleteInstructorDetailsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/hibernate/demo/bidirectional/GetInstructorDetailsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/hibernate/demo/unidirectional/CreateDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/hibernate/demo/unidirectional/DeleteDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/hibernate/entity/Instructor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/out/production/hibernate-one-to-one/hibernate/entity/InstructorDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/demo/bidirectional/DeleteInstructorDetailsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/demo/bidirectional/GetInstructorDetailsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/demo/unidirectional/CreateCoursesDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/demo/unidirectional/CreateDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/demo/unidirectional/CreateInstructorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/demo/unidirectional/DeleteDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/demo/unidirectional/GetInstructorCoursesDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/entity/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate-one-to-many-uni/src/hibernate/entity/InstructorDetail.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hibernate/entity/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
               <folding>
                 <element signature="e#570#571#0" expanded="true" />
                 <element signature="e#598#599#0" expanded="true" />
@@ -78,8 +153,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hibernate/demo/unidirectional/CreateCoursesDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state relative-caret-position="612">
+              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-14" />
     <option name="y" value="4" />
     <option name="width" value="1400" />
@@ -127,50 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="hibernate-one-to-many" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate-one-to-many" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hibernate-one-to-many" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate-one-to-many" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hibernate-one-to-many" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate-one-to-many" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hibernate-one-to-many" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate-one-to-many" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hibernate-one-to-many" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate-one-to-many" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="unidirectional" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hibernate-one-to-many" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate-one-to-many" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -179,7 +214,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546986890678" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hibernate-one-to-many-uni" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -194,6 +229,7 @@
       <recent name="hibernate.demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\crey\IdeaProjects\UdemySpringCourse" />
       <recent name="D:\Users\carlo\IDeaProjects\hibernate-one-to-one\src" />
     </key>
   </component>
@@ -302,7 +338,7 @@
       <workItem from="1546982440247" duration="60000" />
       <workItem from="1546982866346" duration="50000" />
       <workItem from="1546983100683" duration="3982000" />
-      <workItem from="1548859859503" duration="48000" />
+      <workItem from="1548859859503" duration="843000" />
     </task>
     <task id="LOCAL-00001" summary="first project commit">
       <created>1545675919734</created>
@@ -329,7 +365,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14147000" />
+    <option name="totallyTimeSpent" value="14942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -422,17 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate/entity/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate/demo/unidirectional/GetInstructorCoursesDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -476,8 +501,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate/demo/unidirectional/CreateCoursesDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="612">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate/entity/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding>
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
