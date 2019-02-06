@@ -1,17 +1,11 @@
-package hibernate.demo.unidirectional;
+package hibernate.demo;
 
-import hibernate.entity.Course;
-import hibernate.entity.Instructor;
-import hibernate.entity.InstructorDetail;
-import hibernate.entity.Review;
+import hibernate.entity.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class CreateCoursesReviewsDemo {
+public class CreateCoursesForTestDemo {
 
     public static void main(String[] args) {
         SessionFactory factory = new Configuration()
@@ -20,25 +14,24 @@ public class CreateCoursesReviewsDemo {
                 .addAnnotatedClass(InstructorDetail.class)
                 .addAnnotatedClass(Course.class)
                 .addAnnotatedClass(Review.class)
+                .addAnnotatedClass(Student.class)
                 .buildSessionFactory();
         Session session = factory.getCurrentSession();
-
         try {
             session.beginTransaction();
-            Course course = new Course("Course1");
-            Review review = new Review("Review");
-            course.addReview(review);
-            session.save(course);
-            List<Review> reviews = course.getReviews();
-            System.out.println(course);
-            reviews.stream().forEach((r)->
-                    System.out.println(r));
+            int id = 2;
+            Student student = session.get(Student.class, id);
+            System.out.println("Student courses: "+ student.getCourses());
+            System.out.println("Creating new course...");
+            Course course = new Course("Course 2");
+            System.out.println("Course "+ course + " created");
+            student.addCourse(course);
+            session.save (course);
             session.getTransaction().commit();
         } finally {
             session.close();
             factory.close();
         }
     }
-
 }
 
