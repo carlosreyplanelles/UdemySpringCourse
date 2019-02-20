@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.luv2code.springdemo.entity.Customer;
 
 @Repository
-public class CustomerDAOImpl implements CustomerDAO {
+public class CustomerDAOImpl implements CustomerDAO{
 	
 	@Autowired
 	private SessionFactory sessionFactory;
