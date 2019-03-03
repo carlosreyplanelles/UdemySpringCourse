@@ -10,27 +10,33 @@
 <title>Customers list</title>
 </head>
 <body>
-<h1>Customers</h1>
+	<h1>Customers</h1>
 	<table class="table table-striped">
 		<thead>
 			<tr>
 				<th>First Name</th>
 				<th>Last Name</th>
 				<th>Email</th>
+				<th>Action</th>
 			</tr>
 		</thead>
 		<tbody>
 			<c:forEach var="customer" items="${customers}">
+				<c:url var="updateLink" value="/customer/updateForm">
+					<c:param name="customerId" value="${customer.id}" />
+				</c:url>
 				<tr>
 					<td>${customer.firstName}</td>
 					<td>${customer.lastName}</td>
 					<td>${customer.email}</td>
+					<td><a href="${updateLink}" class="btn btn-primary btn-sm">Update</a>
+					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
-	<input type="button" class="btn btn-primary btn-block btn-lg" value="Add Customer"
-		onclick="window.location.href='showAddCustomerForm';return false;"
-		class="add-button" />
+	<input type="button" class="btn btn-primary btn-block btn-lg"
+		value="Add Customer"
+		onclick="window.location.href='showAddCustomerForm';return false;" />
 </body>
 </html>
