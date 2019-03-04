@@ -10,7 +10,7 @@
 <title>Customers list</title>
 </head>
 <body>
-	<h1>Customers</h1>
+	<h1>Customers</h1> 
 	<table class="table table-striped">
 		<thead>
 			<tr>
@@ -25,12 +25,17 @@
 				<c:url var="updateLink" value="/customer/updateForm">
 					<c:param name="customerId" value="${customer.id}" />
 				</c:url>
+				<c:url var="deleteLink" value="/customer/delete">
+					<c:param name="customerId" value="${customer.id}" />
+				</c:url>
 				<tr>
 					<td>${customer.firstName}</td>
 					<td>${customer.lastName}</td>
 					<td>${customer.email}</td>
 					<td><a href="${updateLink}" class="btn btn-primary btn-sm">Update</a>
-					</td>
+						<a
+						onclick="if(!(confirm('Do you want to delete ${customer.firstName} ${customer.lastName }?'))) return false"
+						href="${deleteLink}" class="btn btn-primary btn-sm">delete</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
