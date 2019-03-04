@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <link type="text/css" rel="stylesheet"
@@ -10,7 +11,21 @@
 <title>Customers list</title>
 </head>
 <body>
-	<h1>Customers</h1> 
+
+	<h1>Customers</h1>
+
+	<form:form action="search" method="GET">
+		<div class="active-cyan-3 active-cyan-4 mb-4 row">
+			<div class="col-md-6">
+				<input class="form-control" type="text" placeholder="Search"
+					name="firstName" aria-label="Search">
+			</div>
+			<div class="col-md-3">
+				<input type="submit" value="Search" class="btn btn-primary btn" />
+			</div>
+		</div>
+	</form:form>
+
 	<table class="table table-striped">
 		<thead>
 			<tr>
@@ -32,10 +47,10 @@
 					<td>${customer.firstName}</td>
 					<td>${customer.lastName}</td>
 					<td>${customer.email}</td>
-					<td><a href="${updateLink}" class="btn btn-primary btn-sm">Update</a>
+					<td><a href="${updateLink}" class="btn btn-primary">Update</a>
 						<a
 						onclick="if(!(confirm('Do you want to delete ${customer.firstName} ${customer.lastName }?'))) return false"
-						href="${deleteLink}" class="btn btn-primary btn-sm">delete</a></td>
+						href="${deleteLink}" class="btn btn-primary">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
