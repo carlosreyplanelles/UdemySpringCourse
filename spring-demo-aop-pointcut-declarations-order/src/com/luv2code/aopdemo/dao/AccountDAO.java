@@ -8,7 +8,7 @@ import com.luv2code.aopdemo.model.Account;
 public class AccountDAO {
 	
 	public void addAccount(Account account) {
-		System.out.println(getClass() +": ADDING AN ACCOUNT");
+		System.out.println(getClass() +": ADDING AN ACCOUNT\n");
 	}
 
 }
