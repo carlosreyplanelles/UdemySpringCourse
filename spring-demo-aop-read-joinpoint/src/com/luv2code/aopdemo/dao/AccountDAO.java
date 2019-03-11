@@ -4,12 +4,11 @@ import org.springframework.stereotype.Component;
 
 import com.luv2code.aopdemo.model.Account;
 
-
 @Component
 public class AccountDAO {
 	
 	public void addAccount(Account account) {
-		System.out.println(getClass() +": ADDING AN ACCOUNT");
+		System.out.println(getClass() +": ADDING AN ACCOUNT\n");
 	}
 
 }
